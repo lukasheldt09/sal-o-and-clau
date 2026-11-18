@@ -1,0 +1,117 @@
+/* And&Clau — estilos da landing page */
+:root{
+  --black:#0d0d0d;
+  --yellow:#F9E8A2;
+  --text:#F6F1DE;
+  --muted:#D9D3B8;
+  --line:rgba(249,232,162,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--text);font-family:'DM Sans',system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+
+/* Tipografia (a mesma linha da logo: script + caixa alta espaçada) */
+.script{font-family:'Allura','Great Vibes',cursive;font-weight:400}
+.serif{font-family:'Playfair Display',Georgia,serif}
+.lbl{font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;margin:0 0 16px}
+.h2{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:clamp(34px,4.4vw,56px);line-height:1.08;margin:0}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font-weight:700;font-size:16px;border:2px solid var(--yellow);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-y{background:var(--yellow);color:var(--black)}
+.btn-o{color:var(--yellow)}
+.btn-k{background:var(--black);color:var(--yellow);border-color:var(--black)}
+.btn-block{width:100%;margin-top:28px}
+
+/* Cabeçalho */
+.header{padding:18px 0;border-bottom:1px solid rgba(249,232,162,.18)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.header .btn{min-height:44px;padding:0 22px;font-size:15px}
+.logo{display:flex;flex-direction:column;align-items:center;color:var(--yellow);line-height:1}
+.logo-script{font-size:48px;line-height:.85}
+.logo-sub{font-size:11px;letter-spacing:.45em;padding-left:.45em;text-transform:uppercase}
+.nav{display:flex;gap:32px;font-size:15px;font-weight:500}
+
+/* Início */
+.hero{padding:72px 0 88px;overflow:hidden}
+.hero .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:56px}
+.hero-text{flex:1 1 440px}
+.hero-text .lbl{color:var(--yellow)}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(46px,6.4vw,88px);line-height:1.02;font-weight:700;margin:0 0 28px}
+.hero h1 .script{color:var(--yellow);font-size:1.25em}
+.lead{font-size:20px;line-height:1.6;color:var(--muted);max-width:520px;margin:0 0 40px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px}
+.hero-visual{flex:1 1 320px;display:flex;justify-content:center}
+.arch{position:relative;width:100%;max-width:400px;aspect-ratio:4/5}
+.arch-ring{position:absolute;right:-8%;bottom:-6%;width:60%;aspect-ratio:1;border:2px solid var(--yellow);border-radius:50%}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:999px 999px 28px 28px}
+.arch-badge{position:absolute;left:-4%;bottom:10%;width:96px;height:96px;border-radius:50%;background:var(--yellow);color:var(--black);border:4px solid var(--black);display:flex;align-items:center;justify-content:center;font-size:76px;line-height:1;padding-bottom:10px}
+
+/* Serviços */
+.services{background:var(--yellow);color:var(--black);padding:96px 0}
+.services .h2{max-width:640px;margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--black);color:var(--yellow);border-radius:24px;padding:32px;min-height:210px;display:flex;flex-direction:column;gap:10px}
+.card-num{font-size:34px;line-height:1}
+.card h3{font-family:'Playfair Display',Georgia,serif;font-size:28px;margin:0}
+.card p{margin:0;color:var(--muted);line-height:1.55}
+
+/* Agendamento */
+.booking{padding:96px 0}
+.booking .wrap{display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start}
+.booking-info{flex:1 1 380px}
+.booking .lbl,.insta .lbl{color:var(--yellow)}
+.steps{display:flex;flex-direction:column;gap:22px;margin-top:40px}
+.step{display:flex;gap:18px;align-items:flex-start}
+.step b{flex:none;width:40px;height:40px;border-radius:50%;background:var(--yellow);color:var(--black);display:flex;align-items:center;justify-content:center;font-size:17px}
+.step span{padding-top:7px;line-height:1.5;font-size:18px}
+.panel{flex:1 1 380px;border:1px solid var(--line);border-radius:32px;padding:36px}
+.panel h3{font-family:'Playfair Display',Georgia,serif;font-size:28px;margin:0 0 24px;color:var(--yellow)}
+.pills{display:flex;flex-direction:column;gap:12px}
+.pill{display:flex;justify-content:space-between;align-items:center;min-height:56px;padding:0 24px;border:1px solid var(--line);border-radius:999px;font-weight:500;font-size:17px;transition:background .15s}
+.pill:hover{background:var(--yellow);color:var(--black)}
+
+/* Instagram */
+.insta{padding:96px 0;border-top:1px solid rgba(249,232,162,.18)}
+.insta-head{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;justify-content:space-between;margin-bottom:48px}
+.insta-head > div{flex:1 1 420px}
+.insta-head .h2{margin-bottom:16px}
+.insta-head p{font-size:19px;line-height:1.6;color:var(--muted);margin:0;max-width:520px}
+.insta-head b{color:var(--yellow)}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.gallery a{display:block;overflow:hidden;border-radius:20px;aspect-ratio:5/6}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gallery a:hover img{transform:scale(1.05)}
+
+/* Contato */
+.contact{background:var(--yellow);color:var(--black);padding:88px 0}
+.contact-top{display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;margin-bottom:56px}
+.contact-top .h2{flex:1 1 420px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;border-top:2px solid var(--black);padding-top:32px;line-height:1.6;font-size:17px}
+.info .lbl{margin-bottom:8px}
+.maplink{display:inline-block;margin-top:8px;font-weight:700;border-bottom:2px solid currentColor}
+
+/* Rodapé */
+.footer{padding:32px 0}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;color:#CFCAB5;font-size:14px}
+.footer .logo-script{font-size:38px}
+.footer a{color:var(--yellow)}
+
+/* Botão flutuante do WhatsApp */
+.wa-float{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;width:62px;height:62px;border-radius:50%;background:var(--black);color:var(--yellow);border:2px solid var(--yellow);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.45);transition:transform .15s}
+.wa-float:hover{transform:scale(1.08)}
+
+/* Celular */
+@media(max-width:700px){
+  .wrap{padding:0 20px}
+  .nav{display:none}
+  .hero,.services,.booking,.insta,.contact{padding-top:56px;padding-bottom:56px}
+  section .btn{width:100%}
+  .logo-script{font-size:42px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .gallery a:last-child{grid-column:1/-1;aspect-ratio:2/1}
+}
